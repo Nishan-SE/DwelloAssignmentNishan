@@ -2,20 +2,20 @@
 public class authenticateIP
 {
  public static string checkIp(String ip) 
-   { 
-    if(Inet4Address.getByName().getHostAddress().equals(ip))
-     {
+  { 
+  if(Inet4Address.getByName().getHostAddress().equals(ip))
+    {
        return "IPV4 Address";
-     }
-     elseif(Inet6Address.getByName().getHostAddress().equals(ip)
-      {
-       return "IPV6 Address";
-      }
-      else
-      {
-      return "Neither";
-      }
     }
+  elseif(Inet6Address.getByName().getHostAddress().equals(ip)
+    {
+       return "IPV6 Address";
+    }
+  else
+    {
+      return "Neither";
+    }
+ }
 public static void main(String args[])
  {
   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
