@@ -1,0 +1,48 @@
+
+public class validateIP
+{
+ public static void main(String args[])
+ {
+  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+  
+  int n=Integer.parseInt(br.readLine());
+  
+  String[] input_array =new String[n];
+  String[] output_array =new String[n];
+
+  for(int i=0;i<=n;i++)
+  {
+   input_array[i]=br.readLine();
+  }
+  
+  int j=0;
+   
+  for(String ip : input_array)
+  { 
+   output_array[j]=checkIp(ip);
+   j++;
+  }
+ }
+
+ public static string checkIp(String ip) throws UnknownHostException
+ { 
+  try{
+      if(Inet4Address.getByName().getHostAddress().equals(ip))
+      {
+       return "IPV4 Address";
+      }
+      elseif(Inet6Address.getByName().getHostAddress().equals(ip)
+      {
+       return "IPV6 Address";
+      }
+      else
+      {
+      return "Neither";
+      }
+    }
+  catch(UnknownHostException Ex)
+   {
+    return "Neither";
+     }
+    }
+  }
