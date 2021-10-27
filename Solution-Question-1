@@ -1,5 +1,5 @@
 
-private static String[] getMovieTitles(String substr) 
+public static String[] getMovieTitles(String substr) 
 {
 String response;
 int startPage = 1;
