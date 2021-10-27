@@ -1,7 +1,7 @@
 
 public class Main
 {
-    static int adorableCount(String command) {
+    public static int adorableCount(String command) {
 
         int count =0;
         Pattern COMMAND_PATTERN = Pattern.compile("[a-z]{1}[a-z0-9:]*\\/[a-z0-9]*\\\\[a-z]+");
@@ -15,7 +15,7 @@ public class Main
 
 
     // Finding all subsets of given set[]
-    static void printSubsets(char set[])
+    public static void printSubsets(char set[])
     {
           int count =0;
           int n = set.length;
